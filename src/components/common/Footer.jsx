@@ -35,7 +35,7 @@ const Footer = () => {
             recommendations.
           </p>
 
-          <div className="social-icons">
+          <div className="social-icons" id="footerIcons">
             <a href="#">
               <FaFacebookF />
             </a>
