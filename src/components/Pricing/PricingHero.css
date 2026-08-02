@@ -1,0 +1,126 @@
+/* ===============================
+   Pricing Hero
+================================== */
+
+.pricing-hero {
+    padding: 140px 0 90px;
+    background: #f8fafc;
+}
+
+.pricing-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.pricing-content {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Badge */
+
+.pricing-badge {
+    display: inline-block;
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 18px;
+}
+
+/* Heading */
+
+.pricing-title {
+    font-size: 52px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 24px;
+}
+
+.pricing-title span {
+    color: #2563eb;
+}
+
+/* Description */
+
+.pricing-description {
+    max-width: 760px;
+    margin: auto;
+    color: #6b7280;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Features */
+
+.pricing-features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin-top: 45px;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #4b5563;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.feature-icon {
+    color: #2563eb;
+    font-size: 18px;
+}
+
+/* ===============================
+   Responsive
+================================== */
+
+@media (max-width: 992px) {
+
+    .pricing-title {
+        font-size: 42px;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .pricing-hero {
+        padding: 120px 0 70px;
+    }
+
+    .pricing-title {
+        font-size: 34px;
+    }
+
+    .pricing-description {
+        font-size: 16px;
+    }
+
+    .pricing-features {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+}
+
+@media (max-width:480px) {
+
+    .pricing-title {
+        font-size: 30px;
+    }
+
+    .pricing-description {
+        font-size: 15px;
+    }
+
+}
