@@ -1,0 +1,167 @@
+/* ===========================
+   HOW IT WORKS
+=========================== */
+
+.how-it-works {
+    padding: 80px 20px;
+    background: #f8fafc;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ===========================
+     Heading
+  =========================== */
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-tag {
+    display: inline-block;
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.section-title {
+    font-size: 42px;
+    color: #111827;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.section-title span {
+    color: #2563eb;
+}
+
+.section-subtitle {
+    max-width: 650px;
+    margin: auto;
+    color: #6b7280;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* ===========================
+     Steps
+  =========================== */
+
+.steps-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    position: relative;
+}
+
+.line {
+    position: absolute;
+    top: 32px;
+    left: 17%;
+    right: 17%;
+    height: 2px;
+    background: #dbe4ef;
+    z-index: 0;
+}
+
+.step-card {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+
+.step-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 22px;
+    border-radius: 50%;
+    background: #2563eb;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    transition: 0.3s;
+}
+
+.step-card:hover .step-icon {
+    transform: scale(1.08);
+    background: #1d4ed8;
+}
+
+.step-number {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 700;
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+.step-card h3 {
+    font-size: 24px;
+    color: #111827;
+    margin-bottom: 15px;
+}
+
+.step-card p {
+    max-width: 280px;
+    margin: auto;
+    color: #6b7280;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+/* ===========================
+     Responsive
+  =========================== */
+
+@media (max-width: 992px) {
+    .steps-container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .section-title {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 576px) {
+    .how-it-works {
+        padding: 60px 15px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .section-subtitle {
+        font-size: 15px;
+    }
+
+    .step-card h3 {
+        font-size: 21px;
+    }
+
+    .step-card p {
+        font-size: 15px;
+    }
+
+    .step-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+}
