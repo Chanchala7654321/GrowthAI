@@ -1,0 +1,169 @@
+/* ===========================
+   Referral Hero
+=========================== */
+
+.referral-hero {
+    padding: 140px 20px 80px;
+    background: #f8fafc;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .hero-content {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .hero-tag {
+    display: inline-block;
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+  
+  .hero-title {
+    font-size: 52px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 25px;
+  }
+  
+  .hero-title span {
+    color: #2563eb;
+  }
+  
+  .hero-description {
+    max-width: 720px;
+    margin: auto;
+    color: #6b7280;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+  }
+  
+  /* ===========================
+     Buttons
+  =========================== */
+  
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+  }
+  
+  .primary-btn,
+  .outline-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .primary-btn {
+    background: #2563eb;
+    color: white;
+  }
+  
+  .primary-btn:hover {
+    background: #1d4ed8;
+  }
+  
+  .outline-btn {
+    border: 2px solid #2563eb;
+    color: #2563eb;
+    background: white;
+  }
+  
+  .outline-btn:hover {
+    background: #2563eb;
+    color: white;
+  }
+  
+  /* ===========================
+     Stats
+  =========================== */
+  
+  .hero-stats {
+    border-top: 1px solid #dbe3ee;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+  }
+  
+  .stat-item h2 {
+    color: #2563eb;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  
+  .stat-item p {
+    color: #6b7280;
+    font-size: 15px;
+  }
+  
+  /* ===========================
+     Responsive
+  =========================== */
+  
+  @media (max-width: 992px) {
+    .hero-title {
+      font-size: 42px;
+    }
+  
+    .hero-description {
+      font-size: 17px;
+    }
+  
+    .hero-stats {
+      gap: 50px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .referral-hero {
+      padding: 120px 20px 70px;
+    }
+  
+    .hero-title {
+      font-size: 34px;
+    }
+  
+    .hero-description {
+      font-size: 16px;
+    }
+  
+    .hero-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .primary-btn,
+    .outline-btn {
+      width: 100%;
+      max-width: 300px;
+      justify-content: center;
+    }
+  
+    .hero-stats {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
