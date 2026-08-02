@@ -1,0 +1,136 @@
+/* ===========================
+   Pricing CTA
+=========================== */
+
+.pricing-cta {
+    padding: 90px 0;
+    background: #f8fafc;
+}
+
+.pricing-cta-container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.pricing-cta h2 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.pricing-cta p {
+    max-width: 650px;
+    margin: 0 auto 40px;
+    color: #6b7280;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.pricing-cta-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Common Button */
+
+.cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 15px 34px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    transition: all .3s ease;
+
+    cursor: pointer;
+}
+
+/* Primary Button */
+
+.cta-primary {
+    background: #2563eb;
+    color: #fff;
+}
+
+.cta-primary:hover {
+    background: #1d4ed8;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(37,99,235,.25);
+}
+
+/* Outline Button */
+
+.cta-outline {
+    border: 2px solid #2563eb;
+    color: #2563eb;
+    background: transparent;
+}
+
+.cta-outline:hover {
+    background: #2563eb;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.cta-btn svg {
+    font-size: 18px;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width:768px) {
+
+    .pricing-cta {
+        padding: 70px 0;
+    }
+
+    .pricing-cta h2 {
+        font-size: 32px;
+    }
+
+    .pricing-cta p {
+        font-size: 16px;
+    }
+
+    .pricing-cta-buttons {
+        flex-direction: column;
+    }
+
+    .cta-btn {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+@media (max-width:480px) {
+
+    .pricing-cta h2 {
+        font-size: 28px;
+    }
+
+    .pricing-cta p {
+        font-size: 15px;
+    }
+
+    .cta-btn {
+        padding: 14px 20px;
+        font-size: 15px;
+    }
+}

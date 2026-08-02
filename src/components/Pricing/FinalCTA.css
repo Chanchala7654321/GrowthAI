@@ -1,0 +1,123 @@
+/* ===========================
+   Final CTA
+=========================== */
+
+.final-cta {
+    position: relative;
+    padding: 110px 0;
+    overflow: hidden;
+
+    background: url("https://readdy.ai/api/search-image?query=Abstract%20warm%20gradient%20background%20with%20soft%20terracotta%20and%20golden%20tones%2C%20flowing%20organic%20shapes%2C%20modern%20minimalist%20style%2C%20warm%20ambient%20light%2C%20professional%20but%20inviting%20atmosphere%2C%20no%20text%20or%20hard%20edges&width=1920&height=600&seq=pricing-cta-bg&orientation=landscape")
+        center/cover no-repeat;
+}
+
+.final-cta-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(30, 64, 175, 0.92),
+        rgba(23, 37, 84, 0.90)
+    );
+}
+
+.final-cta-container {
+    position: relative;
+    z-index: 2;
+
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+
+    text-align: center;
+}
+
+.final-cta h2 {
+    font-size: 46px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 22px;
+    line-height: 1.3;
+}
+
+.final-cta h2 span {
+    color: #fde68a;
+}
+
+.final-cta p {
+    max-width: 650px;
+    margin: auto;
+    margin-bottom: 40px;
+
+    color: rgba(255,255,255,.85);
+
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Button */
+
+.cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    padding: 16px 36px;
+
+    background: #facc15;
+    color: #111827;
+
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+
+    border-radius: 10px;
+
+    transition: .3s ease;
+}
+
+.cta-btn svg {
+    font-size: 18px;
+}
+
+.cta-btn:hover {
+    background: #eab308;
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.25);
+}
+
+/* Responsive */
+
+@media (max-width:768px){
+
+    .final-cta{
+        padding:80px 0;
+    }
+
+    .final-cta h2{
+        font-size:34px;
+    }
+
+    .final-cta p{
+        font-size:16px;
+    }
+
+    .cta-btn{
+        width:100%;
+        max-width:320px;
+        padding:15px;
+    }
+}
+
+@media (max-width:480px){
+
+    .final-cta h2{
+        font-size:28px;
+    }
+
+    .final-cta p{
+        font-size:15px;
+    }
+
+}
