@@ -1,0 +1,139 @@
+.market-hero {
+    position: relative;
+    padding: 160px 20px 120px;
+    overflow: hidden;
+}
+
+.market-hero-overlay {
+    position: absolute;
+    inset: 0;
+}
+
+.market-hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.market-hero-gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.25),
+            #f8f9fa);
+}
+
+.market-hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.hero-badge i {
+    font-size: 18px;
+}
+
+.market-hero-content h1 {
+    font-size: 52px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.market-hero-content h1 span {
+    color: #f6d365;
+}
+
+.market-hero-content p {
+    max-width: 700px;
+    margin: auto;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+
+.stat-box h2 {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.stat-box span {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+    .market-hero {
+        padding: 130px 20px 90px;
+    }
+
+    .market-hero-content h1 {
+        font-size: 42px;
+    }
+
+    .hero-stats {
+        gap: 45px;
+    }
+}
+
+@media (max-width: 768px) {
+    .market-hero-content h1 {
+        font-size: 34px;
+    }
+
+    .market-hero-content p {
+        font-size: 16px;
+    }
+
+    .hero-stats {
+        gap: 30px;
+    }
+
+    .stat-box h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .market-hero {
+        padding: 120px 15px 70px;
+    }
+
+    .market-hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-stats {
+        flex-direction: column;
+        gap: 25px;
+    }
+}

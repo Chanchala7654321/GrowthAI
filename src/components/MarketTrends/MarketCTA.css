@@ -1,0 +1,102 @@
+.market-cta {
+    padding: 80px 0;
+    background: #f8fafc;
+}
+
+.cta-content {
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+}
+
+.cta-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 25px;
+    border-radius: 18px;
+    background: #dbeafe;
+    color: #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.cta-content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 15px;
+}
+
+.cta-content p {
+    font-size: 1rem;
+    color: #6b7280;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+.primary-btn {
+    background: #2563eb;
+    color: #fff;
+}
+
+.primary-btn:hover {
+    background: #1d4ed8;
+}
+
+.outline-btn {
+    border: 2px solid #2563eb;
+    color: #2563eb;
+    background: transparent;
+}
+
+.outline-btn:hover {
+    background: #2563eb;
+    color: #fff;
+}
+
+@media (max-width:768px) {
+
+    .market-cta {
+        padding: 60px 20px;
+    }
+
+    .cta-content h2 {
+        font-size: 1.7rem;
+    }
+
+    .cta-content p {
+        font-size: .95rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-btn {
+        width: 100%;
+        max-width: 320px;
+        justify-content: center;
+    }
+}

@@ -4,6 +4,7 @@ import Footer from "./components/common/Footer";
 // import Home from "./pages/Home";
 import Pricing from "./pages/Pricing";
 import Referral from "./pages/Referral";
+import MarketTrends from "./pages/MarketTrends";
 
 
 
@@ -13,7 +14,8 @@ function App() {
       <Navbar />
       {/* <Home /> */}
       {/* <Pricing /> */}
-      <Referral />
+      {/* <Referral /> */}
+      <MarketTrends />
       <Routes>
         {/* <Route path="/" element={<Home />} />
         <Route path="/pricing" element={<Pricing />} />

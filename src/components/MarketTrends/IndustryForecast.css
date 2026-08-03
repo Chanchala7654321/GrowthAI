@@ -1,0 +1,154 @@
+.industry-forecast {
+    padding: 100px 0;
+    background: #f8f9fb;
+}
+
+.forecast-header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.forecast-tag {
+    color: #f59e0b;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.forecast-header h2 {
+    font-size: 42px;
+    margin: 15px 0;
+}
+
+.forecast-header h2 span {
+    color: #f59e0b;
+}
+
+.forecast-header p {
+    color: #666;
+    max-width: 650px;
+    margin: auto;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #ddd;
+}
+
+.timeline-item {
+    display: flex;
+    width: 100%;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.timeline-item.left {
+    justify-content: flex-start;
+}
+
+.timeline-item.right {
+    justify-content: flex-end;
+}
+
+.timeline-card {
+    width: 43%;
+    background: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    border: 1px solid #eee;
+    transition: .3s;
+}
+
+.timeline-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+}
+
+.timeline-number {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45px;
+    height: 45px;
+    background: #f59e0b;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.timeline-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.year {
+    background: #fef3c7;
+    color: #b45309;
+    padding: 6px 15px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.timeline-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    background: #fff7ed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timeline-icon i {
+    color: #f59e0b;
+    font-size: 22px;
+}
+
+.timeline-card h3 {
+    margin-bottom: 15px;
+}
+
+.timeline-card p {
+    color: #666;
+    line-height: 1.7;
+}
+
+@media(max-width:768px) {
+
+    .timeline::before {
+        left: 22px;
+    }
+
+    .timeline-item {
+        justify-content: flex-start !important;
+        padding-left: 60px;
+    }
+
+    .timeline-card {
+        width: 100%;
+    }
+
+    .timeline-number {
+        left: 22px;
+        transform: none;
+    }
+
+}
