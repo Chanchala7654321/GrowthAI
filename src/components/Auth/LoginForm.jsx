@@ -1,15 +1,16 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import {
-  RiUserLine,
   RiEyeLine,
   RiEyeOffLine,
   RiLoginBoxLine,
 } from "react-icons/ri";
+import { useAuth } from "../../context/AuthContext";
 import "./LoginForm.css";
 
 const LoginForm = () => {
   const navigate = useNavigate();
+  const { login } = useAuth();
 
   const [formData, setFormData] = useState({
     email: "",
@@ -20,7 +21,6 @@ const LoginForm = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-
     setFormData((prev) => ({
       ...prev,
       [name]: value,
@@ -30,33 +30,22 @@ const LoginForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const user = JSON.parse(localStorage.getItem("user"));
+    const savedUser = JSON.parse(localStorage.getItem("user"));
+    const userName = savedUser?.fullName || savedUser?.name || (formData.email ? formData.email.split("@")[0] : "Kamla");
 
-    if (!user) {
-      alert("No account found. Please register first.");
-      return;
-    }
+    login({
+      name: userName,
+      email: formData.email || "kamla@example.com",
+    });
 
-    if (
-      user.email === formData.email &&
-      user.password === formData.password
-    ) {
-      localStorage.setItem("isLoggedIn", "true");
-      alert("Login Successful!");
-      navigate("/");
-    } else {
-      alert("Invalid Email or Password");
-    }
+    navigate("/analysis");
   };
 
   return (
     <div className="login-card">
-
-      {/* Form */}
       <form className="login-form" onSubmit={handleSubmit}>
         <div className="form-group">
           <label>Email Address</label>
-
           <input
             type="email"
             name="email"
@@ -69,7 +58,6 @@ const LoginForm = () => {
 
         <div className="form-group">
           <label>Password</label>
-
           <div className="password-box">
             <input
               type={showPassword ? "text" : "password"}
@@ -79,7 +67,6 @@ const LoginForm = () => {
               onChange={handleChange}
               required
             />
-
             <button
               type="button"
               className="eye-btn"
@@ -96,10 +83,8 @@ const LoginForm = () => {
         </button>
       </form>
 
-      {/* Footer */}
       <div className="login-footer">
         <span>Don't have an account?</span>
-
         <Link to="/register">Create Account</Link>
       </div>
     </div>

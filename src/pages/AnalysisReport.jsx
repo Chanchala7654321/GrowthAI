@@ -1,9 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import {
   FiThumbsUp,
   FiAlertTriangle,
   FiGlobe,
   FiSearch,
-//   FiMegaphone,
   FiSmartphone,
   FiTrendingUp,
   FiCalendar,
@@ -19,8 +19,21 @@ import GrowthCard from "../components/AnalysisReport/GrowthCard";
 import "./AnalysisReport.css";
 
 const AnalysisReport = () => {
+  const navigate = useNavigate();
   const business = JSON.parse(localStorage.getItem("businessData")) || {
-    businessName: "minfvgbjkps",
+    businessName: "Your Business",
+  };
+
+  const handleConsultationClick = () => {
+    navigate("/contact");
+  };
+
+  const handleDownloadPDF = () => {
+    window.print();
+  };
+
+  const handleAnalyzeAnother = () => {
+    navigate("/analysis");
   };
 
   const report = {
@@ -197,7 +210,6 @@ const AnalysisReport = () => {
           <RecommendationCard
             title="Digital Marketing Suggestions"
             items={report.marketing}
-            // icon={<FiMegaphone />}
           />
           <RecommendationCard
             title="Social Media Suggestions"
@@ -220,15 +232,15 @@ const AnalysisReport = () => {
         <div className="cta-action-box">
           <p className="cta-subtext">Want a personalized consultation based on this report?</p>
           <div className="cta-button-group">
-            <button className="btn-primary">
+            <button className="btn-primary" onClick={handleConsultationClick}>
               <FiCalendar /> Schedule Free Consultation
             </button>
-            <button className="btn-outline">
+            <button className="btn-outline" onClick={handleDownloadPDF}>
               <FiDownload /> Download PDF Report
             </button>
           </div>
           <div className="cta-secondary-link">
-            <button className="btn-text-pill">
+            <button className="btn-text-pill" onClick={handleAnalyzeAnother}>
               <FiRefreshCw /> Analyze Another Business
             </button>
           </div>
