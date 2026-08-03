@@ -1,0 +1,23 @@
+.referral-page {
+    min-height: 100vh;
+    background: #f8fafc;
+    overflow-x: hidden;
+}
+
+/* Common Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Common Section Spacing */
+.section {
+    padding: 80px 0;
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 60px 0;
+    }
+}
