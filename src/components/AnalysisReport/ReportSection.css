@@ -1,0 +1,74 @@
+/* Report Section Styling */
+
+.report-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-title {
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #1c1917;
+}
+
+.section-strengths .section-title {
+    color: #166534;
+}
+
+.section-weakness .section-title {
+    color: #dc2626;
+}
+
+.section-icon {
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.section-cards-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.info-card {
+    padding: 14px 18px;
+    border-radius: 10px;
+    border: 1px solid #e7e5e4;
+    background: #ffffff;
+    transition: all 0.2s ease;
+}
+
+.section-strengths .info-card {
+    background: #f6faf6;
+    border-color: #e2efe2;
+}
+
+.section-weakness .info-card {
+    background: #fef8f8;
+    border-color: #fecdcd;
+}
+
+.info-card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.info-card h4 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #1c1917;
+}
+
+.info-card p {
+    font-size: 12.5px;
+    line-height: 1.5;
+    color: #57534e;
+    margin: 0;
+}

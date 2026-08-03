@@ -1,0 +1,59 @@
+/* Score Circle Component */
+
+.score-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.score-label-top {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    color: #78716c;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.circle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 8px solid #d97706;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    margin: 0 auto;
+    position: relative;
+    background: #ffffff;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.02);
+}
+
+.score-val {
+    font-size: 38px;
+    font-weight: 800;
+    color: #1c1917;
+    line-height: 1;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.score-max {
+    font-size: 15px;
+    font-weight: 600;
+    color: #78716c;
+    margin-top: 10px;
+}
+
+.score-status-badge {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 6px 18px;
+    border-radius: 20px;
+    background: #fef3c7;
+    color: #92400e;
+    border: 1px solid #fde68a;
+    font-size: 13px;
+    font-weight: 600;
+}
