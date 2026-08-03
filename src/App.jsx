@@ -11,6 +11,8 @@ import Register from "./pages/Register";
 import ProgressSteps from "./components/Analysis/ProgressSteps";
 import Analysis from "./pages/Analysis";
 import AnalysisReport from "./pages/AnalysisReport";
+import GrowthCard from "./components/AnalysisReport/GrowthCard";
+import GrowthAssistant from "./pages/GrowthAssistant";
 
 
 
@@ -28,7 +30,10 @@ function App() {
 
       {/* <ProgressSteps /> */}
       {/* <Analysis /> */}
-      <AnalysisReport />
+      {/* <AnalysisReport /> */}
+
+      <GrowthAssistant />
+      
       <Routes>
         {/* <Route path="/" element={<Home />} />
         <Route path="/pricing" element={<Pricing />} />
