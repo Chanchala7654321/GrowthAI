@@ -1,0 +1,118 @@
+.auth-header {
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  
+  /* Icon Box */
+  
+  .auth-header-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 20px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    border-radius: 18px;
+  }
+  
+  /* Login */
+  
+  .login-icon {
+    background: #eff6ff;
+  }
+  
+  .login-icon i {
+    font-size: 24px;
+    color: #2563eb;
+  }
+  
+  /* Register */
+  
+  .register-icon {
+    background: #ecfdf5;
+  }
+  
+  .register-icon i {
+    font-size: 24px;
+    color: #10b981;
+  }
+  
+  /* Title */
+  
+  .auth-header-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 10px;
+  }
+  
+  /* Subtitle */
+  
+  .auth-header-subtitle {
+    color: #6b7280;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  
+  /* Responsive */
+  
+  @media (max-width: 576px) {
+    .auth-header-title {
+      font-size: 26px;
+    }
+  
+    .auth-header-subtitle {
+      font-size: 14px;
+    }
+  }
+
+
+  .auth-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .auth-header-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 18px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .auth-header-icon svg {
+    font-size: 28px;
+  }
+  
+  .login-icon {
+    background: #eff6ff;
+  }
+  
+  .login-icon svg {
+    color: #2563eb;
+  }
+  
+  .register-icon {
+    background: #ecfeff;
+  }
+  
+  .register-icon svg {
+    color: #06b6d4;
+  }
+  
+  .auth-header-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 10px;
+  }
+  
+  .auth-header-subtitle {
+    color: #6b7280;
+    font-size: 15px;
+    line-height: 1.6;
+  }

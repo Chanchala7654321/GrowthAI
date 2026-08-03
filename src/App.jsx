@@ -6,6 +6,8 @@ import Pricing from "./pages/Pricing";
 import Referral from "./pages/Referral";
 import MarketTrends from "./pages/MarketTrends";
 import Contact from "./pages/Contact";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 
 
@@ -17,7 +19,9 @@ function App() {
       {/* <Pricing /> */}
       {/* <Referral /> */}
       {/* <MarketTrends /> */}
-      <Contact />
+      {/* <Contact /> */}
+      <Login />
+      <Register />
       <Routes>
         {/* <Route path="/" element={<Home />} />
         <Route path="/pricing" element={<Pricing />} />
