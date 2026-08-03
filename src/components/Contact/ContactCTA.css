@@ -1,0 +1,28 @@
+.contact-cta {
+    padding: 30px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: #fff;
+}
+
+.contact-cta h3 {
+    margin-bottom: 15px;
+}
+
+.contact-cta p {
+    line-height: 1.7;
+    margin-bottom: 25px;
+    color: #f1f5f9;
+}
+
+.cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    color: #2563eb;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}

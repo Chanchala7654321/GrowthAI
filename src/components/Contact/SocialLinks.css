@@ -1,0 +1,29 @@
+.social-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .08);
+}
+
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 10px;
+    background: #f8f8f8;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.social-item:hover {
+    transform: translateY(-3px);
+    background: #eef4ff;
+}
