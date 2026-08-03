@@ -8,6 +8,9 @@ import MarketTrends from "./pages/MarketTrends";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import ProgressSteps from "./components/Analysis/ProgressSteps";
+import Analysis from "./pages/Analysis";
+import AnalysisReport from "./pages/AnalysisReport";
 
 
 
@@ -20,8 +23,12 @@ function App() {
       {/* <Referral /> */}
       {/* <MarketTrends /> */}
       {/* <Contact /> */}
-      <Login />
-      <Register />
+      {/* <Login />
+      <Register /> */}
+
+      {/* <ProgressSteps /> */}
+      {/* <Analysis /> */}
+      <AnalysisReport />
       <Routes>
         {/* <Route path="/" element={<Home />} />
         <Route path="/pricing" element={<Pricing />} />

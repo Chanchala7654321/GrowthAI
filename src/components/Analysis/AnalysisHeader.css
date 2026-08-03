@@ -1,0 +1,46 @@
+.analysis-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.analysis-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 20px;
+    border-radius: 18px;
+    background: #cffafe;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.analysis-icon svg {
+    font-size: 28px;
+    color: #0891b2;
+}
+
+.analysis-header h1 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 12px;
+}
+
+.analysis-header p {
+    max-width: 650px;
+    margin: auto;
+    color: #6b7280;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .analysis-header h1 {
+        font-size: 2rem;
+    }
+
+    .analysis-header p {
+        font-size: 15px;
+    }
+}

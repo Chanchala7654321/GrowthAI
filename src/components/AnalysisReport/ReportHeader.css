@@ -1,0 +1,46 @@
+/* Report Header */
+.report-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.report-header .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 16px;
+    border-radius: 20px;
+    background: #fef3c7;
+    color: #d97706;
+    border: 1px solid #fde68a;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.report-header h1 {
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #1c1917;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+
+.report-header .report-subtitle {
+    color: #57534e;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+.report-header .report-subtitle em {
+    font-style: italic;
+    font-weight: 600;
+    color: #292524;
+}
+
+@media(max-width: 600px) {
+    .report-header h1 {
+        font-size: 28px;
+    }
+}

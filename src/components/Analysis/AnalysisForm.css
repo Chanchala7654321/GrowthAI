@@ -1,0 +1,113 @@
+.analysis-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.form-group label span {
+    color: #ef4444;
+}
+
+.form-group label small {
+    color: #9ca3af;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea,
+.fake-select {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+    background: #fff;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.12);
+}
+
+.fake-select {
+    cursor: pointer;
+    color: #9ca3af;
+    min-height: 52px;
+    display: flex;
+    align-items: center;
+}
+
+.form-group textarea {
+    resize: none;
+}
+
+.character-count {
+    margin-top: 6px;
+    text-align: right;
+    color: #9ca3af;
+    font-size: 12px;
+}
+
+.analysis-btn {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    background: #06b6d4;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    transition: 0.3s;
+}
+
+.analysis-btn:hover {
+    background: #0891b2;
+}
+
+.secure-text {
+    text-align: center;
+    font-size: 13px;
+    color: #9ca3af;
+}
+
+@media (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .analysis-btn {
+        padding: 14px;
+        font-size: 15px;
+    }
+}
