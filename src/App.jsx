@@ -5,6 +5,7 @@ import Footer from "./components/common/Footer";
 import Pricing from "./pages/Pricing";
 import Referral from "./pages/Referral";
 import MarketTrends from "./pages/MarketTrends";
+import Contact from "./pages/Contact";
 
 
 
@@ -15,7 +16,8 @@ function App() {
       {/* <Home /> */}
       {/* <Pricing /> */}
       {/* <Referral /> */}
-      <MarketTrends />
+      {/* <MarketTrends /> */}
+      <Contact />
       <Routes>
         {/* <Route path="/" element={<Home />} />
         <Route path="/pricing" element={<Pricing />} />
