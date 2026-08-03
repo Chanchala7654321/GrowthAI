@@ -9,10 +9,12 @@ import {
 
 import PasswordInput from "./PasswordInput";
 import PasswordStrength from "./PasswordStrength";
+import { useAuth } from "../../context/AuthContext";
 import "./RegisterForm.css";
 
 const RegisterForm = () => {
   const navigate = useNavigate();
+  const { login } = useAuth();
 
   const [formData, setFormData] = useState({
     fullName: "",
@@ -75,11 +77,13 @@ const RegisterForm = () => {
       return;
     }
 
-    localStorage.setItem("user", JSON.stringify(formData));
+    const newUser = {
+      name: formData.fullName || "Kamla",
+      email: formData.email,
+    };
 
-    alert("Registration Successful!");
-
-    navigate("/login");
+    login(newUser);
+    navigate("/analysis");
   };
 
   return (
