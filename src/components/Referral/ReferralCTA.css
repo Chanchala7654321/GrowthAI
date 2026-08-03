@@ -1,0 +1,86 @@
+.referral-cta {
+    position: relative;
+    padding: 110px 20px;
+    background: linear-gradient(rgba(35, 35, 35, 0.75), rgba(35, 35, 35, 0.75)),
+        url("https://readdy.ai/api/search-image?query=Abstract%20warm%20gradient%20background%20with%20soft%20terracotta%20and%20golden%20tones%2C%20flowing%20organic%20shapes%2C%20modern%20minimalist%20style%2C%20warm%20ambient%20light%2C%20professional%20but%20inviting%20atmosphere%2C%20no%20text%20or%20hard%20edges&width=1920&height=600&seq=referral-cta-bg&orientation=landscape") center/cover no-repeat;
+    overflow: hidden;
+}
+
+.referral-cta-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,
+            rgba(32, 56, 92, 0.9),
+            rgba(17, 34, 56, 0.88));
+}
+
+.referral-cta .container {
+    position: relative;
+    z-index: 2;
+}
+
+.referral-cta-content {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+.referral-cta-content h2 {
+    font-size: 2.8rem;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.referral-cta-content h2 span {
+    color: #ffd166;
+}
+
+.referral-cta-content p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+.cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #ff9f1c;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.cta-btn svg {
+    font-size: 20px;
+}
+
+.cta-btn:hover {
+    background: #f48c06;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    .referral-cta {
+        padding: 80px 20px;
+    }
+
+    .referral-cta-content h2 {
+        font-size: 2rem;
+    }
+
+    .referral-cta-content p {
+        font-size: 1rem;
+    }
+
+    .cta-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
